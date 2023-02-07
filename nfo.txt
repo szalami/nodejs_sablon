@@ -1,0 +1,22 @@
+start menű -> webes hitelesítő adatok kezelése -> github hitelesítés törlése
+
+git config --global --unset-all user.name
+git config --global --unset-all user.email
+
+git config –global user.email „email@cim”	–local akkor a helyi gépen
+git config –global user.name „nev”
+
+npm install -> node_modules telepítése
+
+
+-------------nem kell ha kézzel rakjuk át---------------------
+A copyfiles telpítése:  /ez rakja át a build elemeit/
+npm install --save-dev copyfiles
+
+"build:src": "npx copyfiles -u 1 src/**/*.{html,js} dist",
+"build:bs": "npx copyfiles -u 4 node_modules/bootstrap/dist/css/bootstrap.css dist",
+"build": "npm-run-all build:src, build:bs"
+
+npm install -g npm-run-all
+
+futtatás: npm run build
